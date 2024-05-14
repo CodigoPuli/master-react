@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import MiComponente from './MiComponente';
+import { SegundoComponente } from './SegundoComponente';
 
 function App() {
 
-  
+
   return (
     <div className="App">
       <header className="App-header">
@@ -12,11 +13,16 @@ function App() {
         <p>
           Bienvenido al master en react!!
         </p>
-      {/* Cargar mi primer componente */}
-      <MiComponente />
+        {/* Cargar mi primer componente */}
+        <div className='componentes'>
+          <hr />
+          <SegundoComponente />
+          <hr />
+          <MiComponente />
+        </div>
       </header>
     </div>
-    
+
   );
 }
 
