@@ -2,9 +2,18 @@ import logo from './logo.svg';
 import './App.css';
 import MiComponente from './MiComponente';
 import { SegundoComponente } from './SegundoComponente';
+import { TercerComponente } from './TercerComponente';
 
 function App() {
 
+  const ficha_medica = {
+    altura: "173cm",
+    grupo: "H+",
+    estado: "Bueno",
+    alergias: "Ninguna"
+  }
+  
+  const numero = 123456
 
   return (
     <div className="App">
@@ -13,8 +22,17 @@ function App() {
         <p>
           Bienvenido al master en react!!
         </p>
+
         {/* Cargar mi primer componente */}
         <div className='componentes'>
+
+          <hr />
+          <TercerComponente
+            nombre="Javier"
+            apellidos="Pulido"
+            ficha={ficha_medica}
+          />
+
           <hr />
           <SegundoComponente />
           <hr />
