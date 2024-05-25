@@ -44,3 +44,8 @@
   padding: 5px;
   color:red;
 }
+
+.label-green{
+  background-color: green;
+  color: white;
+}
